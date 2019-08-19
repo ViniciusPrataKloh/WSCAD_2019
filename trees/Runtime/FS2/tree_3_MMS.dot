@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="matrix_workload <= -0.94197\nmae = 0.07195\nsamples = 1575\nvalue = -0.99984", fillcolor="#e5813900"] ;
+1 [label="LLC-load-misses <= -0.69719\nmae = 0.42385\nsamples = 156\nvalue = -0.55066", fillcolor="#e5813939"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="cycles <= -0.36839\nmae = 0.00779\nsamples = 24\nvalue = 0.98606", fillcolor="#e58139fe"] ;
+1 -> 2 ;
+3 [label="mae = 0.00427\nsamples = 14\nvalue = 0.98251", fillcolor="#e58139fd"] ;
+2 -> 3 ;
+4 [label="mae = 0.00116\nsamples = 10\nvalue = 0.99654", fillcolor="#e58139ff"] ;
+2 -> 4 ;
+5 [label="branches <= -0.25607\nmae = 0.21316\nsamples = 132\nvalue = -0.6535", fillcolor="#e581392c"] ;
+1 -> 5 ;
+6 [label="mae = 0.01237\nsamples = 19\nvalue = 0.11932", fillcolor="#e581398f"] ;
+5 -> 6 ;
+7 [label="mae = 0.11833\nsamples = 113\nvalue = -0.65769", fillcolor="#e581392c"] ;
+5 -> 7 ;
+8 [label="L1-dcache-load-misses <= -0.59353\nmae = 0.00034\nsamples = 1419\nvalue = -0.99988", fillcolor="#e5813900"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="L1-dcache-load-misses <= -0.96494\nmae = 8e-05\nsamples = 921\nvalue = -0.99993", fillcolor="#e5813900"] ;
+8 -> 9 ;
+10 [label="mae = 3e-05\nsamples = 484\nvalue = -0.99999", fillcolor="#e5813900"] ;
+9 -> 10 ;
+11 [label="mae = 9e-05\nsamples = 437\nvalue = -0.99989", fillcolor="#e5813900"] ;
+9 -> 11 ;
+12 [label="Thread <= -0.63636\nmae = 0.00047\nsamples = 498\nvalue = -0.99939", fillcolor="#e5813900"] ;
+8 -> 12 ;
+13 [label="mae = 0.00063\nsamples = 161\nvalue = -0.99839", fillcolor="#e5813900"] ;
+12 -> 13 ;
+14 [label="mae = 0.00014\nsamples = 337\nvalue = -0.99947", fillcolor="#e5813900"] ;
+12 -> 14 ;
+}

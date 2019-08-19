@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="L1-dcache-stores <= 25971789824.0\ngini = 0.42177\nsamples = 1575\nvalue = [1099, 476]\nclass = s", fillcolor="#e5813991"] ;
+1 [label="gini = 0.0\nsamples = 167\nvalue = [0, 167]\nclass = e", fillcolor="#399de5ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="L1-dcache-load-misses <= 125922648064.0\ngini = 0.34259\nsamples = 1408\nvalue = [1099, 309]\nclass = s", fillcolor="#e58139b7"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="branch-misses <= 145200992.0\ngini = 0.21135\nsamples = 1249\nvalue = [1099, 150]\nclass = s", fillcolor="#e58139dc"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 832\nvalue = [832, 0]\nclass = s", fillcolor="#e58139ff"] ;
+3 -> 4 ;
+5 [label="context-switches <= 63942.0\ngini = 0.46064\nsamples = 417\nvalue = [267, 150]\nclass = s", fillcolor="#e5813970"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 150\nvalue = [0, 150]\nclass = e", fillcolor="#399de5ff"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 267\nvalue = [267, 0]\nclass = s", fillcolor="#e58139ff"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 159\nvalue = [0, 159]\nclass = e", fillcolor="#399de5ff"] ;
+2 -> 8 ;
+}

@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="context-switches <= 0.4139\nmae = 0.54307\nsamples = 1417\nvalue = -0.41248", fillcolor="#e5813906"] ;
+1 [label="L1-dcache-loads <= -0.53992\nmae = 0.14851\nsamples = 990\nvalue = -0.53759", fillcolor="#e5813901"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="LLC-load-misses <= -0.43297\nmae = 0.06423\nsamples = 645\nvalue = -0.55784", fillcolor="#e5813900"] ;
+1 -> 2 ;
+3 [label="mae = 0.05936\nsamples = 593\nvalue = -0.55902", fillcolor="#e5813900"] ;
+2 -> 3 ;
+4 [label="mae = 0.01944\nsamples = 52\nvalue = -0.43903", fillcolor="#e5813905"] ;
+2 -> 4 ;
+5 [label="LLC-load-misses <= -0.45561\nmae = 0.22276\nsamples = 345\nvalue = -0.36005", fillcolor="#e5813908"] ;
+1 -> 5 ;
+6 [label="mae = 0.29471\nsamples = 59\nvalue = 0.25314", fillcolor="#e5813922"] ;
+5 -> 6 ;
+7 [label="mae = 0.11245\nsamples = 286\nvalue = -0.37602", fillcolor="#e5813908"] ;
+5 -> 7 ;
+8 [label="cache-misses <= 0.23677\nmae = 0.75276\nsamples = 427\nvalue = 0.64221", fillcolor="#e5813932"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="cpu-migrations <= -0.57459\nmae = 1.06806\nsamples = 110\nvalue = 1.83119", fillcolor="#e5813964"] ;
+8 -> 9 ;
+10 [label="mae = 0.16128\nsamples = 23\nvalue = 5.53883", fillcolor="#e58139ff"] ;
+9 -> 10 ;
+11 [label="mae = 0.41025\nsamples = 87\nvalue = 1.75585", fillcolor="#e5813961"] ;
+9 -> 11 ;
+12 [label="L1-dcache-stores <= 0.84182\nmae = 0.2717\nsamples = 317\nvalue = 0.37558", fillcolor="#e5813927"] ;
+8 -> 12 ;
+13 [label="mae = 0.26867\nsamples = 134\nvalue = 0.66289", fillcolor="#e5813933"] ;
+12 -> 13 ;
+14 [label="mae = 0.10906\nsamples = 183\nvalue = 0.2481", fillcolor="#e5813922"] ;
+12 -> 14 ;
+}

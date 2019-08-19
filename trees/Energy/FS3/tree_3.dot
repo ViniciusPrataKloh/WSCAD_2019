@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="context-switches <= 77936.0\nmae = 28703596.36485\nsamples = 1417\nvalue = 10157470.2743", fillcolor="#e5813906"] ;
+1 [label="L1-dcache-loads <= 264488337408.0\nmae = 7849502.89066\nsamples = 990\nvalue = 3544824.75274", fillcolor="#e5813901"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="cache-misses <= 1384231616.0\nmae = 3356720.45713\nsamples = 643\nvalue = 2474430.47798", fillcolor="#e5813900"] ;
+1 -> 2 ;
+3 [label="mae = 3094957.64796\nsamples = 591\nvalue = 2412310.16575", fillcolor="#e5813900"] ;
+2 -> 3 ;
+4 [label="mae = 1027458.02794\nsamples = 52\nvalue = 8754492.05026", fillcolor="#e5813905"] ;
+2 -> 4 ;
+5 [label="LLC-load-misses <= 1062787136.0\nmae = 11796096.67928\nsamples = 347\nvalue = 12928674.4685", fillcolor="#e5813908"] ;
+1 -> 5 ;
+6 [label="mae = 15576546.60368\nsamples = 59\nvalue = 45338624.15259", fillcolor="#e5813922"] ;
+5 -> 6 ;
+7 [label="mae = 6011097.20578\nsamples = 288\nvalue = 12084668.33176", fillcolor="#e5813908"] ;
+5 -> 7 ;
+8 [label="cache-misses <= 6545384960.0\nmae = 39786971.91203\nsamples = 427\nvalue = 65902888.45456", fillcolor="#e5813932"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="cpu-migrations <= 4.0\nmae = 56451745.84712\nsamples = 110\nvalue = 128745851.8427", fillcolor="#e5813964"] ;
+8 -> 9 ;
+10 [label="mae = 8524449.86683\nsamples = 23\nvalue = 324711691.78599", fillcolor="#e58139ff"] ;
+9 -> 10 ;
+11 [label="mae = 21683621.70884\nsamples = 87\nvalue = 124763506.13125", fillcolor="#e5813961"] ;
+9 -> 11 ;
+12 [label="L1-dcache-stores <= 462437810176.0\nmae = 14360722.36509\nsamples = 317\nvalue = 51810274.09268", fillcolor="#e5813927"] ;
+8 -> 12 ;
+13 [label="mae = 14200199.56307\nsamples = 134\nvalue = 66995591.44469", fillcolor="#e5813933"] ;
+12 -> 13 ;
+14 [label="mae = 5764107.26919\nsamples = 183\nvalue = 45072331.11658", fillcolor="#e5813922"] ;
+12 -> 14 ;
+}
